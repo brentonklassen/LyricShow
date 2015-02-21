@@ -86,7 +86,7 @@ namespace LyricShow
 
             for (int i = 0; i < song.Verses.Count; i++)
             {
-                lstSong.Items.Add(song.Verses[i].Replace("\n"," / "));
+                lstSong.Items.Add(song.Verses[i]);
             }
 
             lstSong.SelectedIndex = 1;
