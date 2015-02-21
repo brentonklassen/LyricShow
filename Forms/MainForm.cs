@@ -83,14 +83,12 @@ namespace LyricShow
         {
             lstSong.Items.Clear();
             if (lstPlaylist.SelectedIndex > 0) { lstSong.Items.Add("<-Previous Song->"); }
+
             for (int i = 0; i < song.Verses.Count; i++)
             {
-                lstSong.Items.Add(/*song.VerseKeys[i] + " - " + */song.Verses[i]);
+                lstSong.Items.Add(song.Verses[i].Replace("\n"," / "));
             }
-            /*foreach (string s in song.Verses)
-            {
-                lstSong.Items.Add(s);
-            }*/
+
             lstSong.SelectedIndex = 1;
             if (lstPlaylist.SelectedIndex < lstPlaylist.Items.Count - 1) { lstSong.Items.Add("<-Next Song->"); }
 
