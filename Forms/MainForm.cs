@@ -411,5 +411,10 @@ namespace LyricShow
         {
             Application.Exit();
         }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

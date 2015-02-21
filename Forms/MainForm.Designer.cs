@@ -34,7 +34,6 @@ namespace LyricShow
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.searchSongsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.savePlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +41,10 @@ namespace LyricShow
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.openSavedDisplaysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDisplaySettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.changeFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,8 +62,6 @@ namespace LyricShow
             this.betaInterfaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lstSong = new System.Windows.Forms.ListBox();
             this.lstPlaylist = new System.Windows.Forms.ListBox();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +85,6 @@ namespace LyricShow
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
-            this.editToolStripMenuItem1,
             this.searchSongsToolStripMenuItem,
             this.toolStripSeparator2,
             this.savePlaylistToolStripMenuItem,
@@ -103,68 +102,75 @@ namespace LyricShow
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.ToolStripOpen_Click);
-            // 
-            // editToolStripMenuItem1
-            // 
-            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.editToolStripMenuItem1.Text = "&Edit";
-            this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
             // searchSongsToolStripMenuItem
             // 
             this.searchSongsToolStripMenuItem.Name = "searchSongsToolStripMenuItem";
             this.searchSongsToolStripMenuItem.ShortcutKeyDisplayString = "F3";
             this.searchSongsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.searchSongsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.searchSongsToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.searchSongsToolStripMenuItem.Text = "&Find Song";
             this.searchSongsToolStripMenuItem.Click += new System.EventHandler(this.ToolStripSearchSongs_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
             // 
             // savePlaylistToolStripMenuItem
             // 
             this.savePlaylistToolStripMenuItem.Name = "savePlaylistToolStripMenuItem";
-            this.savePlaylistToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.savePlaylistToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.savePlaylistToolStripMenuItem.Text = "Save Playlist";
             this.savePlaylistToolStripMenuItem.Click += new System.EventHandler(this.savePlaylistToolStripMenuItem_Click);
             // 
             // openPlaylistToolStripMenuItem
             // 
             this.openPlaylistToolStripMenuItem.Name = "openPlaylistToolStripMenuItem";
-            this.openPlaylistToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.openPlaylistToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.openPlaylistToolStripMenuItem.Text = "Open Playlist";
             this.openPlaylistToolStripMenuItem.Click += new System.EventHandler(this.openPlaylistToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
             // 
             // openSavedDisplaysToolStripMenuItem
             // 
             this.openSavedDisplaysToolStripMenuItem.Name = "openSavedDisplaysToolStripMenuItem";
-            this.openSavedDisplaysToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.openSavedDisplaysToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            this.openSavedDisplaysToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.openSavedDisplaysToolStripMenuItem.Text = "Open Saved Displays";
             this.openSavedDisplaysToolStripMenuItem.Click += new System.EventHandler(this.ToolStripOpenSavedDisplays_Click);
             // 
             // saveDisplaySettingsToolStripMenuItem
             // 
             this.saveDisplaySettingsToolStripMenuItem.Name = "saveDisplaySettingsToolStripMenuItem";
-            this.saveDisplaySettingsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.saveDisplaySettingsToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.saveDisplaySettingsToolStripMenuItem.Text = "Save Display Settings";
             this.saveDisplaySettingsToolStripMenuItem.Click += new System.EventHandler(this.ToolStripSaveDisplaySettings_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(199, 6);
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.quitToolStripMenuItem.Text = "&Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem1,
             this.changeFontToolStripMenuItem,
             this.switchScreenToolStripMenuItem,
             this.preferencesToolStripMenuItem});
@@ -172,11 +178,21 @@ namespace LyricShow
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 24);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
+            // editToolStripMenuItem1
+            // 
+            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
+            this.editToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift)
+                        | System.Windows.Forms.Keys.E)));
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(210, 22);
+            this.editToolStripMenuItem1.Text = "&Song";
+            this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
+            // 
             // changeFontToolStripMenuItem
             // 
             this.changeFontToolStripMenuItem.Name = "changeFontToolStripMenuItem";
-            this.changeFontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
-            this.changeFontToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.changeFontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift)
+                        | System.Windows.Forms.Keys.F)));
+            this.changeFontToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.changeFontToolStripMenuItem.Text = "Change &Font";
             this.changeFontToolStripMenuItem.Click += new System.EventHandler(this.changeFontToolStripMenuItem_Click);
             // 
@@ -184,14 +200,14 @@ namespace LyricShow
             // 
             this.switchScreenToolStripMenuItem.Name = "switchScreenToolStripMenuItem";
             this.switchScreenToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.switchScreenToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.switchScreenToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.switchScreenToolStripMenuItem.Text = "&Switch Screen";
             this.switchScreenToolStripMenuItem.Visible = false;
             // 
             // preferencesToolStripMenuItem
             // 
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.preferencesToolStripMenuItem.Text = "Preferences";
             this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.ToolStripPreferences_Click);
             // 
@@ -252,7 +268,7 @@ namespace LyricShow
             this.reloadSongsToolStripMenuItem});
             this.playlistToolStripMenuItem1.Name = "playlistToolStripMenuItem1";
             this.playlistToolStripMenuItem1.Size = new System.Drawing.Size(56, 24);
-            this.playlistToolStripMenuItem1.Text = "Playlist";
+            this.playlistToolStripMenuItem1.Text = "&Playlist";
             this.playlistToolStripMenuItem1.Visible = false;
             // 
             // removeSelectedToolStripMenuItem
@@ -323,19 +339,6 @@ namespace LyricShow
             this.lstPlaylist.SelectedIndexChanged += new System.EventHandler(this.lstPlaylist_SelectedIndexChanged);
             this.lstPlaylist.DoubleClick += new System.EventHandler(this.lstPlaylist_DoubleClick);
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(181, 6);
-            // 
-            // quitToolStripMenuItem
-            // 
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.quitToolStripMenuItem.Text = "&Quit";
-            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -345,11 +348,12 @@ namespace LyricShow
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.KeyPreview = true;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "LSProjection";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
